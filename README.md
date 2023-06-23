@@ -1,6 +1,8 @@
 Notas generales
 
+- El postman esta en resources
 - El archivo BaseDatos.sql esta en resources
+- Se uso postgresql y java 17, spring boot 3
 - Se uso como patron de diseño el builder, DTO, repository, service.
 - Se crearon un custom excepcion, MontoInvalidoExcepcion.
 - Para el exception handling
@@ -11,5 +13,5 @@ Suposiciones:
 
 - Validacion de telefonos de 9 digitos como sale en el ejemplo (sin embargo depende mucho si aceptaran telefonos internacionales).
 - En cliente y persona solo los campos usados para registrar como sale en el ejemplo han sido validados
-- Entiendo que una cuenta una vez que se crea no es editable. Por eso he emovido el PUT
-- De igual forma, un movimiento no se puede editar ni eliminar, al menos asi funciona en los bancos.
+- Entiendo que una cuenta una vez que se crea no es editable. Por eso he removido el PUT
+- De igual forma, un movimiento no se puede editar ni eliminar, al menos asi funciona en los bancos, por eso he removido PUT y DELETE.

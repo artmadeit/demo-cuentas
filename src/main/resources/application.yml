@@ -1,0 +1,15 @@
+spring:
+  # jpa:
+  #   hibernate.ddl-auto: update
+  # properties:
+  #   hibernate:
+  #     show_sql: true
+  #     format_sql: true
+  sql.init:
+    mode: always
+    schema-locations:
+      - classpath:BaseDatos.sql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/devsu
+    username: root
+    password: somesecretpassword
